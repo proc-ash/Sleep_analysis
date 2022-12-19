@@ -1,0 +1,42 @@
+[
+    {
+        "user": "A",
+        "date": "2021-04-05 15:56:11.553000",
+        "mood_score": 8,
+        "activity": [
+            {
+                "activity": "Walk",
+                "steps": 2369,
+                "distance": 0.0,
+                "duration": 23
+            }
+        ],
+        "sleep": [
+            {
+                "sleep": 84,
+                "hours_of_sleep": "06:57:00",
+                "Hours_in_bed": "07:58:00"
+            }
+        ]
+    },
+    {
+        "user": "B",
+        "date": "2021-04-03 15:56:11.553000",
+        "mood_score": 6,
+        "activity": [
+            {
+                "activity": "Walk",
+                "steps": 1573,
+                "distance": 0.0,
+                "duration": 17
+            }
+        ],
+        "sleep": [
+            {
+                "sleep": 86,
+                "hours_of_sleep": "08:00:00",
+                "Hours_in_bed": "09:18:00"
+            }
+        ]
+    }
+]
