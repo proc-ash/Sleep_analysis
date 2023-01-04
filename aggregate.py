@@ -14,8 +14,7 @@ if __name__ == '__main__':
     
     sleep_collection = db['Sleep']
 
-   
-
+    var_date=input("Enter start date e.g. (mm-dd-yyyy): ")
     results=list(user_collection.aggregate([
         
         {    
@@ -44,23 +43,27 @@ if __name__ == '__main__':
 
             "pipeline":[
                 {
-                "$match": {
-                    "date":"04-05-2022"}
+                "$match": {'date':{"$gte":var_date}}
                 },
                 {
                 "$group": {
-                    "_id": "$activity",
+                    "_id": {"activity":"$activity","date":"$date"},
                     "steps": { "$sum" : "$steps" },
                     "duration": {"$sum" : "$duration"},
                     "distance": {"$sum" : "$distance"}}
                 },
+                
                 {"$project":{
                     "_id":0,
-                    "activity":"$_id",
+                    "activity":"$_id.activity",
+                    "activity_date":"$_id.date",
                     "steps":"$steps",
                     "distance":"$distance",
                     "duration":"$duration",
-                }}
+                }},
+                {
+                    "$sort":{"activity_date":1}
+                }
                 
             ] 
         }
@@ -76,17 +79,21 @@ if __name__ == '__main__':
 
             "pipeline":[
                 {
-                "$match": {
-                    "date":"04-05-2022"},
+                "$match": {'date':{"$gte":var_date}},
                 
 
                 },
+                
                 {"$project":{
                     "_id":0,
+                    "sleep_date":"$date",
                     "sleep":"$sleep score",
                     "hours_of_sleep":"$hours of sleep",
                     "Hours_in_bed":"$hours in bed"
-                }}
+                }},
+                {
+                    "$sort":{"sleep_date":1}
+                }
             ] 
         }
 
@@ -94,7 +101,6 @@ if __name__ == '__main__':
        {"$project":{
         "_id":0,
         "user":"$_id",
-        "date":"$createdAt",
         "mood_score":{"$arrayElemAt":["$mood_score.mood_score",0]},
         "activity": "$activity",
         "sleep":"$sleep"

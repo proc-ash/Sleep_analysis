@@ -1,41 +1,147 @@
 [
     {
         "user": "A",
-        "date": "2021-04-05 15:56:11.553000",
         "mood_score": 8,
         "activity": [
             {
                 "activity": "Walk",
+                "activity_date": "04-03-2022",
+                "steps": 1640,
+                "distance": 0.0,
+                "duration": 17
+            },
+            {
+                "activity": "Fitstar: Personal Trainer",
+                "activity_date": "04-04-2022",
+                "steps": 117,
+                "distance": 0.0,
+                "duration": 6
+            },
+            {
+                "activity": "Walk",
+                "activity_date": "04-05-2022",
                 "steps": 2369,
                 "distance": 0.0,
                 "duration": 23
-            }
-        ],
-        "sleep": [
-            {
-                "sleep": 84,
-                "hours_of_sleep": "06:57:00",
-                "Hours_in_bed": "07:58:00"
-            }
-        ]
-    },
-    {
-        "user": "B",
-        "date": "2021-04-03 15:56:11.553000",
-        "mood_score": 6,
-        "activity": [
+            },
             {
                 "activity": "Walk",
-                "steps": 1573,
+                "activity_date": "04-06-2022",
+                "steps": 1393,
+                "distance": 0.0,
+                "duration": 15
+            },
+            {
+                "activity": "Walk",
+                "activity_date": "04-07-2022",
+                "steps": 1536,
                 "distance": 0.0,
                 "duration": 17
             }
         ],
         "sleep": [
             {
+                "sleep_date": "04-03-2022",
+                "sleep": 81,
+                "hours_of_sleep": "08:52:00",
+                "Hours_in_bed": "10:25:00"
+            },
+            {
+                "sleep_date": "04-04-2022",
+                "sleep": 83,
+                "hours_of_sleep": "06:50:00",
+                "Hours_in_bed": "07:37:00"
+            },
+            {
+                "sleep_date": "04-05-2022",
+                "sleep": 84,
+                "hours_of_sleep": "06:57:00",
+                "Hours_in_bed": "07:58:00"
+            },
+            {
+                "sleep_date": "04-06-2022",
+                "sleep": 83,
+                "hours_of_sleep": "07:27:00",
+                "Hours_in_bed": "08:52:00"
+            },
+            {
+                "sleep_date": "04-07-2022",
+                "sleep": 87,
+                "hours_of_sleep": "07:57:00",
+                "Hours_in_bed": "08:50:00"
+            }
+        ]
+    },
+    {
+        "user": "B",
+        "mood_score": 6,
+        "activity": [
+            {
+                "activity": "Run",
+                "activity_date": "04-03-2022",
+                "steps": 5760,
+                "distance": 6.465203,
+                "duration": 36
+            },
+            {
+                "activity": "Walk",
+                "activity_date": "04-04-2022",
+                "steps": 2065,
+                "distance": 0.0,
+                "duration": 19
+            },
+            {
+                "activity": "Walk",
+                "activity_date": "04-05-2022",
+                "steps": 1573,
+                "distance": 0.0,
+                "duration": 17
+            },
+            {
+                "activity": "Walk",
+                "activity_date": "04-06-2022",
+                "steps": 1779,
+                "distance": 0.0,
+                "duration": 25
+            },
+            {
+                "activity": "Run",
+                "activity_date": "04-07-2022",
+                "steps": 5937,
+                "distance": 6.47782,
+                "duration": 36
+            }
+        ],
+        "sleep": [
+            {
+                "sleep_date": "04-03-2022",
+                "sleep": 83,
+                "hours_of_sleep": "06:57:00",
+                "Hours_in_bed": "07:46:00"
+            },
+            {
+                "sleep_date": "04-04-2022",
+                "sleep": 88,
+                "hours_of_sleep": "07:39:00",
+                "Hours_in_bed": "08:27:00"
+            },
+            {
+                "sleep_date": "04-05-2022",
                 "sleep": 86,
                 "hours_of_sleep": "08:00:00",
                 "Hours_in_bed": "09:18:00"
+            },
+            {
+                "sleep_date": "04-06-2022",
+                "sleep": 82,
+                "hours_of_sleep": "07:48:00",
+                "Hours_in_bed": "09:11:00"
+            },
+            {
+                "sleep_date": "04-07-2022",
+                "sleep": 83,
+                "hours_of_sleep": "07:19:00",
+                "Hours_in_bed": "08:23:00"
             }
         ]
     }
