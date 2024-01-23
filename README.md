@@ -1,5 +1,4 @@
-# A Data pipeline to fetch the mood score, activities and sleep of all the users who have been active on a certain day to analyse user’s check in for mood (mood score)
-# and their level of activity based on steps/active minutes, sleep
+#### A Data pipeline to fetch the mood score, activities and sleep of all the users who have been active on a certain day to analyse user’s check in for mood (mood score) and their level of activity based on steps/active minutes, sleep
 ## Prerequisites: 
 * Python 
 * Mongodb
